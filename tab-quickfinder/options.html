@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tab QuickFinder</title>
+    <link rel="stylesheet" href="options.css" />
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Tab QuickFinder</h1>
+    </header>
+
+    <section>
+      <h3>Priority tabs</h3>
+      <div class="row">
+        <label for="priority"
+          >Enter the title or URL of a site you wish to make a priority<br/>
+          (one per line):<br/>
+          <br />
+        </label>
+        <textarea id="priority" rows="10" cols="50"></textarea>
+      </div>
+      <div class="row">
+        <label for="audible">Turn on display for audible price</a></label>
+        <input id="audible" type="checkbox" />
+      </div>
+    </section>
+
+    <button id="save">Save</button>
+    <button onclick="location.href='chrome://extensions/shortcuts'" id="shortcuts">Set Shortcuts</button>
+    <div id="status"></div>
+  </body>
+</html>

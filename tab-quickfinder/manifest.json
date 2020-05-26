@@ -1,0 +1,56 @@
+{
+  "name": "Tab QuickFinder",
+  "description": "Productivity focused extension to help you quickly find your tabs",
+  "version": "1.0",
+  "permissions": ["tabs", "storage"],
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "assets/images/icon_128.png",
+    "default_popup": "popup.html",
+    "default_title": "Tab QuickFinder"
+  },
+  "icons": {
+    "16": "assets/images/icon_16.png",
+    "48": "assets/images/icon_48.png",
+    "128": "assets/images/icon_128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "fishbeinb@gmail.com",
+      "strict_min_version": "60.0"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K",
+        "chromeos": "Ctrl+Shift+K",
+        "linux": "Ctrl+Shift+K"
+      }
+    },
+    "quick_mute_tab": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+M",
+        "mac": "Command+Shift+M",
+        "chromeos": "Ctrl+Shift+M",
+        "linux": "Ctrl+Shift+M"
+      },
+      "description": "Quickly Mute Current Tab"
+    },
+    "quick_pin_tab": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P",
+        "chromeos": "Ctrl+Shift+P",
+        "linux": "Ctrl+Shift+P"
+      },
+      "description": "Quickly Pin Current Tab"
+    }
+  },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "manifest_version": 2
+}
